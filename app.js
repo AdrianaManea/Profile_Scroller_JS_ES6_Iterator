@@ -1,28 +1,28 @@
 // Create the Data
 const data = [{
-    name: 'John Doe',
-    age: 31,
-    gender: 'male',
-    lookingfor: 'male',
-    location: 'Berlin DE',
-    image: 'https://randomuser.me/api/portraits/men/47.jpg'
-  },
-  {
-    name: 'Sara Smith',
-    age: 25,
-    gender: 'female',
-    lookingfor: 'male',
-    location: 'Cologne DE',
-    image: 'https://randomuser.me/api/portraits/women/47.jpg'
-  },
-  {
-    name: 'William Thompson',
-    age: 39,
-    gender: 'male',
-    lookingfor: 'female',
-    location: 'Hamburg DE',
-    image: 'https://randomuser.me/api/portraits/men/83.jpg'
-  },
+  name: 'John Doe',
+  age: 31,
+  gender: 'male',
+  lookingfor: 'male',
+  location: 'Berlin DE',
+  image: 'https://randomuser.me/api/portraits/men/47.jpg'
+},
+{
+  name: 'Sara Smith',
+  age: 25,
+  gender: 'female',
+  lookingfor: 'male',
+  location: 'Cologne DE',
+  image: 'https://randomuser.me/api/portraits/women/47.jpg'
+},
+{
+  name: 'William Thompson',
+  age: 39,
+  gender: 'male',
+  lookingfor: 'female',
+  location: 'Hamburg DE',
+  image: 'https://randomuser.me/api/portraits/men/83.jpg'
+},
 ];
 
 const profiles = profileIterator(data);
@@ -69,8 +69,8 @@ function profileIterator(profiles) {
         value: profiles[nextIndex++],
         done: false
       } : {
-        done: true
-      }
+          done: true
+        }
     }
   };
 };
